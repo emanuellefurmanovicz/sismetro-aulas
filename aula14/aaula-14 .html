@@ -6,7 +6,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         h1 {
-            text-align: center;
+            text-align: center; background-color: rgb(177, 104, 147);
         }
 
         body {
@@ -18,12 +18,14 @@
 <body class="container-fluid">
     <div class="row">
         <div class="col-4 offset-4">
+            <h1> Calculadora</h1>
+
             <div class="row">
                 <div class="col-12">
-                    <input type="text" class="form-control" id="n1">
+                    <input type="text" class="form-control" id="valor">
                 </div>
             </div>
-
+            
             <div class="row">
                 <div class="col-3">
                     <div class="d-grid gap-2">
@@ -38,7 +40,7 @@
                     <div class="row">
                         <div class="col-8">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button">&lt;x</button>
+                                <button class="btn btn-primary" type="button" onclick="apagar()">&lt;x</button>
                             </div>
                         </div>
                         <div class="col-4">
@@ -50,30 +52,30 @@
                     <div class="row mt-2">
                         <div class="col-4">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button">7</button>
-                                <button class="btn btn-primary" type="button">4</button>
-                                <button class="btn btn-primary" type="button">1</button>
+                                <button class="btn btn-primary" type="button"onclick="insere_7()">7</button>
+                                <button class="btn btn-primary" type="button"onclick="insere_4()">4</button>
+                                <button class="btn btn-primary" type="button"onclick="insere_1()">1</button>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button">8</button>
-                                <button class="btn btn-primary" type="button">5</button>
-                                <button class="btn btn-primary" type="button">2</button>
+                                <button class="btn btn-primary" type="button"onclick="insere_8()">8</button>
+                                <button class="btn btn-primary" type="button"onclick="insere_5()">5</button>
+                                <button class="btn btn-primary" type="button"onclick="insere_2()">2</button>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button">9</button>
-                                <button class="btn btn-primary" type="button">6</button>
-                                <button class="btn btn-primary" type="button">3</button>
+                                <button class="btn btn-primary" type="button"onclick="insere_9()">9</button>
+                                <button class="btn btn-primary" type="button"onclick="insere_6()">6</button>
+                                <button class="btn btn-primary" type="button"onclick="insere_3()">3</button>
                             </div>
                         </div>
                     </div>
                     <div class="row mt-2">
                         <div class="col-8">
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="button">0</button>
+                                <button class="btn btn-primary" type="button" onclick="insere_0()">0</button>
                             </div>
                         </div>
                         <div class="col-4">
@@ -86,10 +88,10 @@
                 <div class="col-3">
                     <div class="d-grid gap-2">
                         <button class="btn-primary btn" type="button">/</button>
-                        <button class="btn-primary btn" type="button">X</button>
+                        <button class="btn-primary btn" type="button">x</button>
                         <button class="btn-primary btn" type="button">-</button>
-                        <button class="btn-primary btn" type="button">+</button>
-                        <button class="btn-primary btn" type="button">=</button>
+                        <button class="btn-primary btn" type="button" onclick="efetuar_soma()">+</button>
+                        <button class="btn-primary btn" type="button" onclick="resultado()">=</button>
                     </div>
 
                 </div>
@@ -100,6 +102,6 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-    <script src="aula13.js"> </script>
+    <script src="aula14.js"> </script>
 
 </body>
